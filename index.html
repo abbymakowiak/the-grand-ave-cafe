@@ -5,11 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Grand Avenue Cafe</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
         </head>
         <body>
             <header>
                 <img src="images/grand-ave-logo.svg" alt="Grand Avenue Cafe Logo">
-            <nav>
+                <div class="hamburger" onclick="toggleNav()">
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+            <nav class="toggle-nav"> <p class="exit" onclick="toggleNav()">x</p>
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="about.html">About</a>
@@ -17,17 +23,16 @@
                 <a href="jobs.html">Jobs</a>
             </nav>
             </header>
-            <main>
+            <main> 
                 <img src="images/grandaveoutside.jpg" alt="Grand Avenue Cafe">
-                <h1>Hours of Operation</h1>
+                <div class="hours"><h1>Hours of Operation</h1>
                 <p>Monday: 7:30 AM - 2:30 PM</p>
                 <p>Tuesday: 7:30 AM - 2:30 PM</p>
                 <p>Thursday: 7:30 AM - 2:30 PM</p>
                 <p>Friday: 7:30 AM - 2:30 PM</p>
                 <p>Saturday: 7:30 AM - 2:30 PM</p>
-                <p>Sunday: 7:30 AM - 2:30 PM</p>
+                <p>Sunday: 7:30 AM - 2:30 PM</p></div> 
 
-                <a href="menu.html" class="menu">Menu</a>
-                <img src="images/dish (1).png" alt="Dish">
+                <a href="menu.html" class="menu">View Menu<img src="images/dish (1).png" alt="Dish"></a>
             </main>
         </body>

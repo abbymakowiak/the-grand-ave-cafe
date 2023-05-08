@@ -5,11 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Grand Avenue Cafe</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
         </head>
         <body>
             <header>
                 <img src="images/grand-ave-logo.svg" alt="Grand Avenue Cafe Logo">
-            <nav>
+                <div class="hamburger" onclick="toggleNav()">
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+            <nav class="toggle-nav"><p class="exit" onclick="toggleNav()">x</p>
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="about.html">About</a>
@@ -18,7 +24,7 @@
             </nav>
             </header>
             <main>
-                <form>
+                <form><div class="job">
                 <h3>Contact Information</h3><div>
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" name="name">
@@ -125,6 +131,6 @@
                 </div>
                 <div class="actions">
                     <input type="submit">
-                </div></form>
+                </div></form></div>
             </main>
         </body>

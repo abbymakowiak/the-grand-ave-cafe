@@ -5,11 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Grand Avenue Cafe</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
         </head>
         <body>
             <header>
                 <img src="images/grand-ave-logo.svg" alt="Grand Avenue Cafe Logo">
-            <nav>
+                <div class="hamburger" onclick="toggleNav()">
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+            <nav class="toggle-nav"><p class="exit" onclick="toggleNav()">x</p>
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="about.html">About</a>
@@ -17,7 +23,7 @@
                 <a href="jobs.html">Jobs</a>
             </nav>
             </header>
-            <main><form>
+            <main><form><div class="fill">
                 <h1>Contact Form</h1>
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" name="name">
@@ -28,8 +34,8 @@
                 <label for="phone">Phone</label>
                 <input type="text" id="Phone" name="phone-number">
                 <label for="help">How Can We Help?</label>
-                <textarea id="help"></textarea></form>
-                <h1>Contact Us</h1>
+                <textarea id="help"></textarea></form></div>
+                <div class="info"><h1>Contact Us</h1>
                 <h3>The Grand Avenue Cafe</h3>
                 <p>119 W Grand Ave</p>
                 <p>Eau Claire, WI 54703</p>
@@ -41,6 +47,6 @@
                 <p>Saturday: 7:30 AM - 2:30 PM</p>
                 <p>Sunday: 7:30 AM - 2:30 PM</p>
                 <h3>Phone</h3>
-                <p>(715) 831-1100</p>
+                <p>(715) 831-1100</p></div>
             </main>
         </body>

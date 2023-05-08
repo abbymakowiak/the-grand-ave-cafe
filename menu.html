@@ -5,11 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Grand Avenue Cafe</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
         </head>
         <body>
             <header>
                 <img src="images/grand-ave-logo.svg" alt="Grand Avenue Cafe Logo">
-            <nav>
+                <div class="hamburger" onclick="toggleNav()">
+                    <hr>
+                    <hr>
+                    <hr>
+                    </div>
+            <nav class="toggle-nav"><p class="exit" onclick="toggleNav()">x</p>
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="about.html">About</a>
@@ -19,6 +25,7 @@
             </header>
             <main>
                 <img src="images/menu.jpg" alt="Menu">
+                <div class="options">
                 <h1>Menu</h1>
                 <h2>Breakfast</h2>
                 <h3>Quiche de Jour</h3>
@@ -67,5 +74,5 @@
                 <p>Smoked turkey & peppered corned beef with Swiss, green leaf lettuce, fresh tomato slices, & our horseradish sauce on sourdough multigrain, cranberry wild rice or marble rye bread.</p>
                 <h3>Charlotte's Web</h3>
                 <p>(Named for our neighbor, Webb, who likes B.L.T "webbed" with onions.) Strips of sizzling bacon, green leaf lettuce, tomatoes & thinly sliced onions, with mayonnaise on sourdough toast.</p>
-            </main>
+            </main></div>
         </body>
